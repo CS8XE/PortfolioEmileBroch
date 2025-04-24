@@ -50,7 +50,7 @@
 
         <div class="header-mobile">
             <span class="mobile-home-link"><a href="index.html">Émile.</a></span>
-            <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            <a class="mobile-menu-toggle" href="index.html"><span>Menu</span></a>
         </div>
 
         <div class="row wide main-nav-wrap">
@@ -58,9 +58,8 @@
                 <ul>
                     <li><a href="index.html" class="home-link">Émile.</a></li>
                     <li class="current"><a href="#intro" class="smoothscroll">Introduction</a></li>
-                    <li><a href="#Symfony" class="smoothscroll">Découverte de Symfony</a></li>
-                    <li><a href="#ModeProjet" class="smoothscroll">Travailler en mode projet</a></li>
-                    <li><a href="#AVenir" class="smoothscroll">A Venir</a></li>
+                    <li><a href="#DecouverteApp" class="smoothscroll">Découverte de l'application</a></li>
+                    <li><a href="#competences" class="smoothscroll">Competences</a></li>
                 </ul>
             </nav>
         </div>
@@ -95,7 +94,7 @@
 
             </div> <!-- end intro content -->
 
-            <a href="#AVenir" class="intro-scrolldown smoothscroll">
+            <a href="#competences" class="intro-scrolldown smoothscroll">
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
             </a>
 
@@ -107,52 +106,108 @@
 
                 <h2>Introduction</h2>
 
-                <p class="lead">Texte introduction ministage
+                <p class="lead">Je vais vous présenter ici le projet qui a accompagné ma classe et moi tout au long de notre deuxième année.
+                    Il s'agit d'une véritable commande, destinée à une utilisation réelle.
+                    Cette application web permet de gérer les demandes de mini-stages pour des élèves allant du collège jusqu’au lycée.
                 </p>
 
                 <hr>
             </div>
 
             <figure>
-                <img src="images/NoclashKeziah.jpg"
-                     srcset="images/NoclashKeziah.jpg 1000w,
-                                images/NoclashKeziah.jpg 500w"
-                     sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                <img src="images/NoclashEmile.jpg"
-                     srcset="images/NoclashEmile.jpg 1000w,
-                                images/NoclashEmile.jpg 500w"
-                     sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                <img src="images/MinistageInterface.jpg"
+                     srcset="images/MinistageInterface.jpg 1000w,
+                                images/MinistageInterface.jpg 500w"
+                     sizes="(max-width: 1000px) 100vw, 1000px" alt="Sociogramme sous le point de vue de Kéziah">
+            </figure>
 
-                <figcaption>
-                    Voici deux visions qui change selon notre profile ...
-                </figcaption>
+            <figure>
+                <img src="images/MinistageInterface2.jpg"
+                     srcset="images/MinistageInterface2.jpg 1000w,
+                                    images/MinistageInterface2.jpg 500w"
+                     sizes="(max-width: 1000px) 100vw, 1000px" alt="Sociogramme sous mon point de vue">
             </figure>
 
             <div class="row u-add-half-bottom">
 
+                <div id="DecouverteApp" class="column lg-6 tab-12">
+
+                    <h2>1. Présentation de l'application Ministage</h2>
+                    <p>Ministage est une application qui nous a accompagnés tout au long de notre deuxième année.
+                        À l’origine, nous avons commencé à travailler sur une version PHP existante, accompagnée d’une base de données dans un état assez dégradé.
+                        Nous avons donc entrepris une refonte complète, en réalisant un nouveau modèle conceptuel de données et en créant des scripts SQL adaptés.</p>
+
+                    <h3>2. Rencontre avec le client et corrections</h3>
+                    <p>Par la suite, nous avons rencontré notre client,
+                        M. Mordelet. Ensemble, nous avons analysé les fonctionnalités existantes de la version utilisée et avons corrigé plusieurs bugs,
+                        notamment ceux liés au changement de mot de passe et à l’impression des conventions.
+                        Une fois cette version PHP améliorée et fonctionnelle, un nouveau projet a vu le jour autour de cette même application.</p>
+
+                </div>
+
                 <div class="column lg-6 tab-12">
 
-                    <h2>1. Découverte de Noclash.io et choix du projet</h2>
-                    <p>Nous avons commencé notre stage en découvrant la plateforme Noclash.io, qui fonctionne un peu comme Moodle, et sur laquelle notre maître de stage partageait les ressources nécessaires. Chaque jour, nous y faisions un test pour suivre notre progression. Dès le début, il nous a été demandé de préciser nos préférences et nos affinités avec certains langages. Bien que plusieurs options aient été envisagées, nous avons finalement décidé de travailler sur un projet en VueJs, en raison de son côté innovant et engageant.</p>
+                    <h4>3. Transition vers Symfony et répartition des tâches</h4>
+                    <p>Nous avons alors entamé l'apprentissage de Symfony afin de créer une version plus moderne, sécurisée et maintenable de Ministage.
+                        De mon côté, je me suis personnellement chargé de la gestion du profil de réservation, en développant tout le CRUD associé.
+                        À chaque séance, nous faisions un résumé de nos avancées,
+                        tandis qu'une partie de la classe continuait à travailler sur la version PHP pour résoudre certains bugs encore présents.</p>
 
-                    <h3>2. Premiers défis techniques</h3>
-                    <p>Durant la première semaine, après avoir exploré les bases de VueJs à travers la création d’un petit site, nous avons tenté de faire fonctionner une ancienne version du logiciel sur lequel nous devions travailler. Après avoir forké le projet et essayé de nombreuses manipulations, la semaine s’est achevée sans réussite. Le vendredi, nous avons appris que le souci venait probablement d’un problème de base de données lié à un "include", sans que nous puissions en comprendre l’origine exacte. Malgré nos recherches et nos tentatives de débogage, le mystère restait entier.</p>
+                    <h5>4. Une expérience concrète et enrichissante</h5>
+                    <p>Ce projet nous a permis de découvrir toutes les étapes d’un développement réel : de la reprise de l’existant à la refonte complète,
+                        jusqu'à la transition vers un framework moderne. Il s’agissait d’un véritable travail d’équipe, avec des échanges réguliers avec le client,
+                        une répartition des rôles claire, et un suivi rigoureux de nos tâches et livrables.</p>
 
                 </div>
 
-                <div class="column lg-6 tab-12">
-
-                    <h4>3. Persévérance face aux obstacles</h4>
-                    <p>Lors de la deuxième semaine, malgré la suggestion de notre tuteur, M. Trapinaud, de changer de projet en raison des difficultés rencontrées, nous avons préféré continuer et tenter d'implémenter du JSON sur notre site en VueJs. Cela fonctionnait correctement, mais nous n’avions toujours aucune idée d’où venait l'erreur initiale. Les tests se sont enchaînés sans plus d’indices. Finalement, nous avons contacté M. Trapinaud pour une aide plus concrète et pris rendez-vous pour une explication approfondie le lundi suivant.</p>
-
-                    <h5>4. Imprévus et travail à distance</h5>
-                    <p>La troisième semaine a été marquée par la maladie : deux réunions étaient prévues, l’une avec M. Trapinaud et l’autre avec Mme Taurand, mais nous sommes malheureusement tombés malades tous les deux. Durant les semaines suivantes, notre tuteur, très occupé et confronté à des conditions techniques difficiles au village, nous a proposé de poursuivre le travail depuis chez nous. Cette nouvelle organisation nous a permis d’avancer à notre rythme, bien que la communication avec M. Trapinaud ait été insuffisante, chacun pensant que l’autre était indisponible.</p>
-
-                    <h6>5. Une expérience enrichissante malgré les obstacles</h6>
-                    <p>Bien que la dernière semaine ait été moins structurée et que peu d’éléments aient été ajoutés, ce stage nous a permis de mieux comprendre les réalités du développement web, de gérer des projets en autonomie et de faire face à des imprévus techniques et humains. Nous retenons une expérience formatrice, faite de persévérance, de découvertes, mais aussi de leçons sur la communication en milieu professionnel.</p>
-
-                </div>
             </div>
+
+            <figure>
+                <img src="images/MinistageInterface3.jpg"
+                     srcset="images/MinistageInterface3.jpg 1000w,
+                                    images/MinistageInterface3.jpg 500w"
+                     sizes="(max-width: 1000px) 100vw, 1000px" alt="Sociogramme sous mon point de vue">
+            </figure>
+
+            <div id="competences" class="column lg-12 intro">
+                <h2>Compétences mises en œuvre</h2>
+
+                <p class="lead">Voici un tableau récapitulatif des compétences du BTS SIO que j’ai mobilisées à travers le projet Ministage, accompagnées des tâches réalisées qui les illustrent.</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Compétence</th>
+                        <th>Tâches réalisées</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Gérer le patrimoine informatique</td>
+                        <td>Analyse de l’ancienne version PHP de l’application et refonte complète du modèle conceptuel de données avec création de scripts SQL adaptés.</td>
+                    </tr>
+                    <tr>
+                        <td>Répondre aux incidents et aux demandes d’assistance et d’évolution</td>
+                        <td>Correction de bugs en collaboration avec le client, notamment sur le changement de mot de passe et l’impression des conventions.</td>
+                    </tr>
+                    <tr>
+                        <td>Développer la présence en ligne de l’organisation</td>
+                        <td>Reprise et modernisation de l’application Ministage en la migrant de PHP vers Symfony pour améliorer sa sécurité, sa maintenabilité et son accessibilité.</td>
+                    </tr>
+                    <tr>
+                        <td>Travailler en mode projet</td>
+                        <td>Répartition des rôles entre les membres de l’équipe, points réguliers sur l’avancée du projet, échanges avec le client et suivi des tâches.</td>
+                    </tr>
+                    <tr>
+                        <td>Mettre à disposition des utilisateurs un service informatique</td>
+                        <td>Développement du module de gestion du profil de réservation avec Symfony, comprenant tout le CRUD (Création, Lecture, Mise à jour, Suppression).</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+            </div>
+
 
         </div>
 
